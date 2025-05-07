@@ -1,4 +1,9 @@
 export interface ListProducts{
-  status:string;
-  respose:string;
+  idProduct:string;
+  nameProduct:string;
+  priceProduct:number;
+  ivaProduct:number;
+  profitPercentage:number;
+  idCategory:number;
+  stock:number;
 }

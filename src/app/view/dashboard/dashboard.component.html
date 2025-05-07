@@ -1,2 +1,24 @@
 <app-header></app-header>
+<table class="table table-hover table-dark">
+    <thead>
+      <tr>
+        <th scope="col">idProducto</th>
+        <th scope="col">Nombre Producto</th>
+        <th scope="col">Valor Producto</th>
+        <th scope="col">IVA Producto</th>
+        <th scope="col">Procentaje Ganacia</th>
+        <th scope="col">Cantidad de Stock</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <th scope="row">{{product.idProduct}}</th>
+        <td>{{product.nameProduct}}</td>
+        <td>{{product.priceProduct}}</td>
+        <td>{{product.ivaProduct}}</td>
+        <td>{{product.profitPercentage}}</td>
+        <td>{{product.stock}}</td>
+      </tr>
+    </tbody>
+  </table>
 <app-footer></app-footer>
